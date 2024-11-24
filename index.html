@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,9 @@
     <meta name="description" content="Streamline your daily note-taking with Notekeeper. Organize, access, and enhance productivity with ease. Your go-to platform for managing your everyday notes.
     ">
     <link rel="shortcut icon" href="./favicon.svg" type="iamge/svg+xml">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css" />
   
     <script src="./src/js/theme.js"></script>
 
@@ -23,6 +26,60 @@
 
 </head>
 <body>
-    
+
+  <header class="sidebar" data-sidebar>
+
+    <div class="wrapper wrapper-1">
+      <img src="./src/images/logo-light.svg" alt="Notekeeper" class="logo-light">
+      <img src="./src/images/logo-dark.svg" alt="Notekeeper" class="logo-dark">
+
+      <button class="menu-btn icon-btn large" aria-label="Close menu" data-sidebar-toggler>
+        <span class="material-symbols-rounded" aria-hidden="true"><i class="fas fa-times"></i></span>
+        <div class="state-layer"></div>
+      </button>
+
+    </div>
+
+    <button class="fab" data-note-create-btn>
+      <span class="material-symbols-rounded" aria-hidden="true"><i class="fas fa-plus"></i></span>
+      <span class="text text-label-large">New note</span>
+      <div class="state-layer"></div>
+    </button>
+
+    <div class="wrapper wrapper-2">
+      <h2 class="text-title-small">Notebooks</h2>
+      <button class="icon-btn small" data-tooltip="Create new notebook" aria-label="Create new notebook" data-add-notebook>
+        <span class="material-symbols-rounded" aria-hidden="true"><i class="fas fa-plus"></i></span>
+        <div class="state-layer"></div>
+      </button>
+    </div>
+
+    <nav class="nav custom-scrollbar" data-sidebar-list>
+      <div class="nav-item">
+        <span class="text text-label-large" data-notebook-field>My Notebook</span>
+        <button class="icon-btn small" aria-label="Edit notebook" data-tooltip="Edit notebook" data-edit-btn>
+          <span class="material-symbols-rounded" aria-hidden="true"><i class="fas fa-pencil-alt"></i></span>
+          <div class="state-layer"></div>
+        </button>
+        
+        <button class="icon-btn small" aria-label="Delete notebook" data-tooltip="Delete notebook" data-delete-btn>
+          <span class="material-symbols-rounded" aria-hidden="true"><i class="fas fa-trash-alt"></i></span>
+          <div class="state-layer"></div>
+        </button>
+
+        <div class="state-layer"></div>
+
+
+      </div>
+    </nav>
+
+    <div class="cp-info">
+      <span class="text-label-large">
+        Copyright <span data-current-year style="display: inline-block;"></span>
+      </span>
+    </div>
+
+  </header>
+     
 </body>
 </html>
