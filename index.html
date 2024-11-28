@@ -81,9 +81,70 @@
 
   </header>
 
-  <div class="overlay" data-sidebar-overlay data-sidebar-tobbler>
+  <div class="overlay" data-sidebar-overlay data-sidebar-tobbler></div>
+
+  <main class="main">
+
+    <div class="header">
+
+      <div class="wrapper">
+        <p class="title text-title-large" data-greeting>
+          Good Morning
+        </p>
+
+        <span class="text text-body-medium" data-current-date>
+          Sat, Sep 22 2023
+        </span>
+      </div>
+
+      <button class="theme-btn icon-btn large" aria-label="Toggle theme" data-tooltip="Toggle theme" data-theme-btn>
+        <span class="material-symbols-rounded dark-icon" aria-hidden="true"><i class="fas fa-moon"></i></span>
+        <span class="material-symbols-rounded light-icon" aria-hidden="true"><i class="far fa-sun"></i></span>
+      
+        <div class="state-layer"></div>
+      </button>
+
+      <button class="menu-btn icon-btn large" aria-label="Open menu" data-sidebar-toggler>
+        <span class="material-symbols-rounded" aria-hidden="true">
+          <i class="fas fa-bars"></i>
+        </span>
+
+        <div class="state-layer"></div>
+      </button>
+
+    </div>
+
+    <h2 class="title text-title-medium" data-note-pannel-title>
+      My Notebook
+    </h2>
+
+    <div class="note-list" data-note-panel>
+      <h3 class="card-title text-title-medium">
+        Note title
+      </h3>
+
+      <p class="card-text text-body-large">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quibusdam, quod sint? Officiis laudantium aperiam voluptas 
+        atque iste totam laboriosam rem voluptatibus fugit quae molestiae dolorum, similique possimus amet saepe? Quas.
+      </p>
+      <div class="wrapper">
+        <span class="car-time text-label-large">20 min ago
+        </span>
+
+        <button class="icon-btn large" aria-label="Delete note" data-tooltip="Delete note">
+          <span class="material-symbols-rounded" aria-hidden="true"><i class="fas fa-trash-alt"></i></span>
+          
+          <div class="state-layer"></div>
+        </button>
+
+      
+      </div>
+
+
+    </div>
+
+  </main>
     
-  </div>
-     
 </body>
 </html>
