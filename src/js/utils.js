@@ -22,6 +22,13 @@ const addEventOnElements = function($elements, eventType, callback) {
     $elements.forEach($element => $element.addEventListener(eventType, callback));
 }
 
+
+const getGreetingMsg = function(currentHour) {
+
+}
+
+
 export {
-    addEventOnElements
+    addEventOnElements,
+    getGreetingMsg
 }
