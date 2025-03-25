@@ -1030,3 +1030,10 @@ height: 100%;
   display: flex;
   gap: 8px;
 }
+
+
+/* commun css */
+
+.hidden {
+  display: none;
+}
