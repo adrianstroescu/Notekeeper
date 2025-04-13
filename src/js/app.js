@@ -31,3 +31,13 @@ addEventOnElements($sidebarTogglers, 'click', function() {
 const $greetElem = document.querySelector('[data-greeting]');
 const currentHour = new Date().getHours();
 $greetElem.textContent = getGreetingMsg(currentHour);
+
+// Initialize tooltip behavior for all dom elements with 'data-tooltip' attribute
+
+const $tooltipElems = document.querySelectorAll(['data-tooltip']);
+
+
+// Show current date on homepage
+
+const $currentDateElem = document.querySelector('[data-current-date]');
+$currentDateElem.textContent = new Date().toDateString().replace(' ', ', ');
